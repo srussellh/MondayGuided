@@ -8,20 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		02EA5B6922A584CE006D5D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EA5B6822A584CE006D5D6C /* AppDelegate.swift */; };
-		02EA5B6B22A584CE006D5D6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EA5B6A22A584CE006D5D6C /* ViewController.swift */; };
 		02EA5B6E22A584CE006D5D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EA5B6C22A584CE006D5D6C /* Main.storyboard */; };
 		02EA5B7022A584CE006D5D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EA5B6F22A584CE006D5D6C /* Assets.xcassets */; };
 		02EA5B7322A584CE006D5D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EA5B7122A584CE006D5D6C /* LaunchScreen.storyboard */; };
+		02EA5B7C22A58753006D5D6C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EA5B7B22A58753006D5D6C /* Message.swift */; };
+		02EA5B8022A5BACD006D5D6C /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EA5B7F22A5BACD006D5D6C /* MessageController.swift */; };
+		02EA5B8322A5C018006D5D6C /* MessageListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EA5B8222A5C018006D5D6C /* MessageListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02EA5B6522A584CE006D5D6C /* Monday Guaded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monday Guaded.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EA5B6822A584CE006D5D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02EA5B6A22A584CE006D5D6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02EA5B6D22A584CE006D5D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02EA5B6F22A584CE006D5D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02EA5B7222A584CE006D5D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02EA5B7422A584CE006D5D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02EA5B7A22A5860A006D5D6C /* Monday Guaded.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Monday Guaded.entitlements"; sourceTree = "<group>"; };
+		02EA5B7B22A58753006D5D6C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		02EA5B7F22A5BACD006D5D6C /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		02EA5B8222A5C018006D5D6C /* MessageListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +59,49 @@
 		02EA5B6722A584CE006D5D6C /* Monday Guaded */ = {
 			isa = PBXGroup;
 			children = (
-				02EA5B6822A584CE006D5D6C /* AppDelegate.swift */,
-				02EA5B6A22A584CE006D5D6C /* ViewController.swift */,
+				02EA5B7E22A5B848006D5D6C /* Resources */,
+				02EA5B8122A5BAD9006D5D6C /* ModelController */,
+				02EA5B7D22A5B81B006D5D6C /* Model */,
+				02EA5B7A22A5860A006D5D6C /* Monday Guaded.entitlements */,
 				02EA5B6C22A584CE006D5D6C /* Main.storyboard */,
+				02EA5B8422A5C03E006D5D6C /* ViewController */,
+			);
+			path = "Monday Guaded";
+			sourceTree = "<group>";
+		};
+		02EA5B7D22A5B81B006D5D6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02EA5B7B22A58753006D5D6C /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02EA5B7E22A5B848006D5D6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02EA5B6822A584CE006D5D6C /* AppDelegate.swift */,
 				02EA5B6F22A584CE006D5D6C /* Assets.xcassets */,
 				02EA5B7122A584CE006D5D6C /* LaunchScreen.storyboard */,
 				02EA5B7422A584CE006D5D6C /* Info.plist */,
 			);
-			path = "Monday Guaded";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		02EA5B8122A5BAD9006D5D6C /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				02EA5B7F22A5BACD006D5D6C /* MessageController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		02EA5B8422A5C03E006D5D6C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				02EA5B8222A5C018006D5D6C /* MessageListTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +136,11 @@
 				TargetAttributes = {
 					02EA5B6422A584CE006D5D6C = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02EA5B6B22A584CE006D5D6C /* ViewController.swift in Sources */,
+				02EA5B7C22A58753006D5D6C /* Message.swift in Sources */,
+				02EA5B8022A5BACD006D5D6C /* MessageController.swift in Sources */,
 				02EA5B6922A584CE006D5D6C /* AppDelegate.swift in Sources */,
+				02EA5B8322A5C018006D5D6C /* MessageListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +329,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Monday Guaded/Monday Guaded.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Monday Guaded/Info.plist";
+				DEVELOPMENT_TEAM = H8Y4FR84B6;
+				INFOPLIST_FILE = "$(SRCROOT)/Monday Guaded/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,8 +348,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Monday Guaded/Monday Guaded.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Monday Guaded/Info.plist";
+				DEVELOPMENT_TEAM = H8Y4FR84B6;
+				INFOPLIST_FILE = "$(SRCROOT)/Monday Guaded/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
